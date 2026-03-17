@@ -9,7 +9,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/GauriLekshmiSathya/ci-cd-test.git'
+                git branch: 'main', url: 'https://github.com/GauriLekshmiSathya/ci-cd-test.git'
             }
         }
 
